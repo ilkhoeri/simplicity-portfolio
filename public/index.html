@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/public/img/uta.1x1.png" rel="icon">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- darkmode script start -->
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+    } else {
+    document.documentElement.classList.remove('dark')
+    }
+  </script>
+  <!-- darkmode script end -->
+
+
+</head>
+<body>
+<!-- header start -->
+<header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+  <div class="container">
+    <div class="relative flex items-center justify-between">
+      <div class="px-4">
+        <a href="#home" class="max-w-[250px] block py-2 text-lg font-bold invert transition duration-1000 hover:invert-0 hover:contrast-200">
+          <img src="img/khoeriilham-generator-logo.svg" alt="">
+        </a>
+      </div>
+
+<!-- navbar & hamburger -->
+      <div class="flex items-center px-4">
+<!-- hamburger start -->
+        <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+          <span class="hamburger-line origin-top-left transition duration-500 ease-in-out"></span>
+          <span class="hamburger-line transition duration-500 ease-in-out"></span>
+          <span class="hamburger-line origin-bottom-left transition duration-500 ease-in-out"></span>
+        </button>
+<!-- hamburger end -->
+
+<!-- navbar start -->
+        <nav id="nav-menu" class="mt-3 absolute right-4 top-full hidden w-full max-w-[250px] rounded-2xl bg-slate-50 py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent">
+          <ul class="block lg:flex">
+            <li class="group"><a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
+            </li>
+            <li class="group"><a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">About</a>
+            </li>
+            <li class="group"><a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
+            </li>
+            <li class="group"><a href="#clients" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Clients</a>
+            </li>
+            <li class="group"><a href="#blog" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
+            </li>
+            <li class="group"><a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
+            </li>
+
+<!-- dark mode start -->
+            <li class="flex items-center lg:mt-0 justify-center mt-5 mb-4">
+              <div class="flex">
+                <span class="mr-2 text-sm text-slate-500 dark:text-slate-200">light</span>
+                <input type="checkbox" class="hidden" id="dark-toggle">
+                <label for="dark-toggle">
+                  <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                    <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                  </div>
+                </label>
+                <span class="ml-2 text-sm text-slate-500 dark:text-slate-200">dark</span>
+              </div>
+            </li>
+<!-- dark mode end -->
+
+          </ul>
+        </nav>
+<!-- navbar end -->
+      </div>
+    </div>
+  </div>
+</header>
+<!-- header end -->
+
+
+<!-- hero section start -->
+<section id="home" class="pt-36 dark:bg-dark">
+  <div class="container">
+    <div class="flex flex-wrap">
+      <div class="w-full self-center px-4 lg:w-1/2">
+        <h1 class="text-base font-semibold text-primary md:text-xl">Hai <text class="cursor-pointer" title="full senyum">😎</text>, saya <span class="mt-1 block text-4xl font-bold text-dark lg:text-5xl dark:text-white">Ilham Khoeri</span></h1>
+        <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Not Found & <span class="text-dark dark:text-white">not found</span></h2>
+        <p class="mb-10 font-medium leading-relaxed text-secondary">Belajar Web Mulai dari N<text class="cursor-pointer" title="SANGAT MELELAHKAN!">⭕</text>L banged sangat melelahkan <span class="font-bold text-dark dark:text-white">Bukan?!</span></p>
+        <a href="#" class="rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 hover:text-dark py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
+      </div>
+      
+      <div class="w-full self-end px-4 lg:w-1/2">
+        <div class="relative mt-2 lg:right-0 lg:mt-0">
+          <img src="/public/img/uta.png" title="uta One Piece" alt="ilkhoeri" class="relative w-44 z-10 mx-auto max-w-full">
+          <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125 sm:scale-50">
+            <svg class="sm:max-w-[250px]" width="365" height="400" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="linearGradientId" gradientTransform="rotate(-45 0.5 0.5)"><stop offset="0%"  stop-color="#FBDA61" /><stop offset="100%"  stop-color="#FF5ACD" /></linearGradient><clipPath id="shape"><path fill="currentColor" d="M833.5,597.5Q695,695,597.5,781.5Q500,868,387,797Q274,726,201,613Q128,500,201.5,387.5Q275,275,387.5,261Q500,247,672,201.5Q844,156,908,328Q972,500,833.5,597.5Z"></path></clipPath></defs><g clip-path="url(#shape)"><path fill="url(#linearGradientId)" d="M833.5,597.5Q695,695,597.5,781.5Q500,868,387,797Q274,726,201,613Q128,500,201.5,387.5Q275,275,387.5,261Q500,247,672,201.5Q844,156,908,328Q972,500,833.5,597.5Z" /></g></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- hero section end -->
+
+
+<!-- about section start -->
+<section id="about" class="pt-36 pb-32">
+  <div class="container">
+    <div class="flex flex-wrap">
+      <div class="w-full px-4 mb-10 lg:w-1/2">
+        <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
+        <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Selamat mengerjakan</h2>
+        <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi numquam voluptates sapiente sit beatae commodi incidunt?</p>
+      </div>
+        <div class="w-full px-4 lg:w-1/2">
+          <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari Belajar</h3>
+          <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minima facilis explicabo minus magnam ipsum mollitia sunt asperiores quaerat suscipit?</p>
+          <div class="flex items-center">
+  <!-- github icon -->
+            <a href="https://github.com/ilkhoeri" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-dark hover:border-none text-slate-300 hover:hiden:text-slate-300 hover:text-white transition duration-300">
+              <svg class="fill-current" role="img" width="34" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M8 1C4.133 1 1 4.13 1 7.993c0 3.09 2.006 5.71 4.787 6.635.35.064.478-.152.478-.337 0-.166-.006-.606-.01-1.19-1.947.423-2.357-.937-2.357-.937-.319-.808-.778-1.023-.778-1.023-.635-.434.048-.425.048-.425.703.05 1.073.72 1.073.72.624 1.07 1.638.76 2.037.582.063-.452.244-.76.444-.935-1.554-.176-3.188-.776-3.188-3.456 0-.763.273-1.388.72-1.876-.072-.177-.312-.888.07-1.85 0 0 .586-.189 1.924.716A6.711 6.711 0 018 4.381c.595.003 1.194.08 1.753.236 1.336-.905 1.923-.717 1.923-.717.382.963.142 1.674.07 1.85.448.49.72 1.114.72 1.877 0 2.686-1.638 3.278-3.197 3.45.251.216.475.643.475 1.296 0 .934-.009 1.688-.009 1.918 0 .187.127.404.482.336A6.996 6.996 0 0015 7.993 6.997 6.997 0 008 1z" clip-rule="evenodd"></path></svg>
+            </a>
+  <!-- twitter icon -->
+            <a href="https://github.com/ilkhoeri" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-dark hover:border-none text-slate-300 hover:hiden:text-slate-300 hover:text-white transition duration-300">
+              <svg class="fill-current" role="img" width="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+  <!-- facebook icon -->
+            <a href="https://github.com/ilkhoeri" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-dark hover:border-none text-slate-300 hover:hiden:text-slate-300 hover:text-white transition duration-300">
+              <svg class="fill-current" role="img" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M14,6h3a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H14A5,5,0,0,0,9,7v3H7a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1H9v7a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1V14h2.22a1,1,0,0,0,1-.76l.5-2a1,1,0,0,0-1-1.24H13V7A1,1,0,0,1,14,6Z"/></svg>
+            </a>
+  <!-- instagram icon -->
+            <a href="https://github.com/ilkhoeri" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-dark hover:border-none text-slate-300 hover:hiden:text-slate-300 hover:text-white transition duration-300">
+              <svg class="fill-current" role="img" width="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 2C9.284 2 8.944 2.01133 7.87733 2.06C6.81267 2.10867 6.08533 2.278 5.44933 2.52533C4.78267 2.776 4.178 3.16933 3.678 3.67867C3.16948 4.17809 2.77591 4.78233 2.52467 5.44933C2.27867 6.08533 2.10867 6.81333 2.06 7.878C2.012 8.944 2 9.28333 2 12C2 14.7167 2.01133 15.056 2.06 16.1227C2.10867 17.1873 2.278 17.9147 2.52533 18.5507C2.776 19.2173 3.16933 19.822 3.67867 20.322C4.1781 20.8305 4.78234 21.2241 5.44933 21.4753C6.08533 21.722 6.81267 21.8913 7.87733 21.94C8.944 21.9887 9.284 22 12 22C14.716 22 15.056 21.9887 16.1227 21.94C17.1873 21.8913 17.9147 21.722 18.5507 21.4747C19.2173 21.224 19.822 20.8307 20.322 20.3213C20.8305 19.8219 21.2241 19.2177 21.4753 18.5507C21.722 17.9147 21.8913 17.1873 21.94 16.1227C21.9887 15.056 22 14.716 22 12C22 9.284 21.9887 8.944 21.94 7.87733C21.8913 6.81267 21.722 6.08533 21.4747 5.44933C21.2236 4.78204 20.83 4.17755 20.3213 3.678C19.8219 3.16948 19.2177 2.77591 18.5507 2.52467C17.9147 2.27867 17.1867 2.10867 16.122 2.06C15.056 2.012 14.7167 2 12 2ZM12 3.802C14.67 3.802 14.9867 3.812 16.0413 3.86C17.016 3.90467 17.5453 4.06667 17.898 4.20467C18.3647 4.38533 18.698 4.60267 19.048 4.952C19.398 5.302 19.6147 5.63533 19.7953 6.102C19.9327 6.45467 20.0953 6.984 20.14 7.95867C20.188 9.01333 20.198 9.33 20.198 12C20.198 14.67 20.188 14.9867 20.14 16.0413C20.0953 17.016 19.9333 17.5453 19.7953 17.898C19.6353 18.3324 19.3799 18.7253 19.048 19.048C18.7254 19.38 18.3324 19.6354 17.898 19.7953C17.5453 19.9327 17.016 20.0953 16.0413 20.14C14.9867 20.188 14.6707 20.198 12 20.198C9.32933 20.198 9.01333 20.188 7.95867 20.14C6.984 20.0953 6.45467 19.9333 6.102 19.7953C5.66764 19.6353 5.27467 19.3799 4.952 19.048C4.62012 18.7253 4.36475 18.3323 4.20467 17.898C4.06733 17.5453 3.90467 17.016 3.86 16.0413C3.812 14.9867 3.802 14.67 3.802 12C3.802 9.33 3.812 9.01333 3.86 7.95867C3.90467 6.984 4.06667 6.45467 4.20467 6.102C4.38533 5.63533 4.60267 5.302 4.952 4.952C5.27463 4.62003 5.66761 4.36465 6.102 4.20467C6.45467 4.06733 6.984 3.90467 7.95867 3.86C9.01333 3.812 9.33 3.802 12 3.802Z"/><path d="M12 15.3367C11.5618 15.3367 11.128 15.2504 10.7231 15.0827C10.3183 14.915 9.95047 14.6692 9.64064 14.3594C9.3308 14.0495 9.08502 13.6817 8.91734 13.2769C8.74965 12.8721 8.66335 12.4382 8.66335 12C8.66335 11.5618 8.74965 11.1279 8.91734 10.7231C9.08502 10.3183 9.3308 9.95046 9.64064 9.64062C9.95047 9.33078 10.3183 9.08501 10.7231 8.91732C11.128 8.74964 11.5618 8.66333 12 8.66333C12.885 8.66333 13.7336 9.01487 14.3594 9.64062C14.9851 10.2664 15.3367 11.1151 15.3367 12C15.3367 12.8849 14.9851 13.7336 14.3594 14.3594C13.7336 14.9851 12.885 15.3367 12 15.3367ZM12 6.86C10.6368 6.86 9.32942 7.40153 8.36549 8.36547C7.40155 9.32941 6.86002 10.6368 6.86002 12C6.86002 13.3632 7.40155 14.6706 8.36549 15.6345C9.32942 16.5985 10.6368 17.14 12 17.14C13.3632 17.14 14.6706 16.5985 15.6345 15.6345C16.5985 14.6706 17.14 13.3632 17.14 12C17.14 10.6368 16.5985 9.32941 15.6345 8.36547C14.6706 7.40153 13.3632 6.86 12 6.86ZM18.6353 6.76667C18.6353 7.0889 18.5073 7.39794 18.2795 7.6258C18.0516 7.85366 17.7426 7.98167 17.4204 7.98167C17.0981 7.98167 16.7891 7.85366 16.5612 7.6258C16.3334 7.39794 16.2053 7.0889 16.2053 6.76667C16.2053 6.44443 16.3334 6.13539 16.5612 5.90753C16.7891 5.67968 17.0981 5.55167 17.4204 5.55167C17.7426 5.55167 18.0516 5.67968 18.2795 5.90753C18.5073 6.13539 18.6353 6.44443 18.6353 6.76667Z"/></svg>
+            </a>
+  <!-- linkedin icon -->
+            <a href="https://github.com/ilkhoeri" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-dark hover:border-none text-slate-300 hover:hiden:text-slate-300 hover:text-white transition duration-300">
+              <svg class="fill-current" role="img" width="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Linkedin</title><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"/></svg>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- about section end -->
+
+<!-- portfolio section start -->
+<section id="portfolio" class="pt-36 pb-16 bg-amber-200">
+  <div class="container-xl">
+    <div class="w-full px-4">
+      <div class="mx-auto text-center mb-16">
+        <h4 class="font-semibold uppercase text-dark mb-2 text-sm sm:text-4xl lg:text-3xl">Portfolio</h4>
+        <h2 class="font-bold text-purple-600 text-3xl mb-4">Project Terbaru</h2>
+        <p class="font-medium text-md text-secondary sm:text-sm md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum amet perspiciatis! Aut dolorem quod eius eveniet ratione esse in.</p>
+      </div>
+    </div>
+
+<!-- pictures portfolio start -->
+    <div class="w-full py-2 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+
+      <div class="mb-12 p-4 md:w-1/2 sm:w-1/2">
+        <div class="rounded-2xl shadow-2xl overflow-hidden">
+          <img src="img/one-piece-red/ss.png" alt="luffy" width="w-full">
+        </div>
+        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Luffy in movie Red</h3>
+        <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque eveniet atque suscipit tempora accusamus neque placeat quisquam quod! Dignissimos.</p>
+      </div>
+
+      <div class="mb-12 p-4 md:w-1/2 sm:w-1/2">
+        <div class="rounded-2xl shadow-2xl overflow-hidden">
+          <img src="img/one-piece-red/ss.png" alt="luffy" width="w-full">
+        </div>
+        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Luffy in movie Red</h3>
+        <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque eveniet atque suscipit tempora accusamus neque placeat quisquam quod! Dignissimos.</p>
+      </div>
+
+      <div class="mb-12 p-4 md:w-1/2 sm:w-1/2">
+        <div class="rounded-2xl shadow-2xl overflow-hidden">
+          <img src="img/one-piece-red/ss.png" alt="luffy" width="" class="">
+        </div>
+        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Luffy in movie Red</h3>
+        <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque eveniet atque suscipit tempora accusamus neque placeat quisquam quod! Dignissimos.</p>
+      </div>
+
+      <div class="mb-12 p-4 md:w-1/2 sm:w-1/2">
+        <div class="rounded-2xl shadow-2xl overflow-hidden">
+          <img src="img/one-piece-red/ss.png" alt="luffy" width="" class="">
+        </div>
+        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Luffy in movie Red</h3>
+        <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque eveniet atque suscipit tempora accusamus neque placeat quisquam quod! Dignissimos.</p>
+      </div>
+
+    </div>
+
+<!-- pictures portfolio end -->
+
+  </div>
+</section>
+<!-- portfolio section end -->
+
+
+<!-- clients section start -->
+<section id="clients" class="mt-10 pt-36 pb-32 bg-slate-700">
+  <div class="container">
+    <div class="w-full px-4">
+      <div class="mx-auto text-center mb-16">
+        <h4 class="font-semibold uppercase text-dark mb-2 text-lg">Clients</h4>
+        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Pekerjasama</h2>
+        <p class="font-medium text-md text-white sm:text-sm md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum amet perspiciatis! Aut dolorem quod eius eveniet ratione esse in.</p>
+      </div>
+    </div>
+    <div class="w-full px-4">
+      <div class="flex flex-wrap items-center justify-center">
+      <a href="#" class="max-w-[140px] mx-4 py-4 grayscale opacity-60 transition duration-500 ease-in-out hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+        <img src="img/clients/Google_2015_logo.svg" alt="Google">
+      </a>
+        <a href="#" class="max-h-[170px] mx-4 py-4 grayscale opacity-60 transition duration-500 ease-in-out hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+        <img src="img/clients/Gojek_logo_2022.svg" alt="GoJek">
+      </a>
+        <a href="#" class=" max-w-[45px] mx-4 py-4 grayscale opacity-60 transition duration-500 ease-in-out hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+        <img src="img/clients/Starbucks_Corporation_Logo_2011.svg" alt="Starbucks">
+      </a>
+      <a href="#" class="max-w-[150px] mx-4 py-4 grayscale opacity-60 transition duration-500 ease-in-out hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+        <img src="img/clients/Slack_Technologies_Logo.svg" alt="Slack Technologi">
+      </a>
+      <a href="#" class="max-w-[110px] mx-4 py-4 grayscale opacity-60 transition duration-500 ease-in-out hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+        <img src="img/clients/Grab_Logo.svg" alt="Grab Indonesia">
+      </a>
+      <a href="#" class="max-w-[170px] mx-4 py-4 grayscale opacity-60 transition duration-500 ease-in-out hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+        <img src="img/clients/Logo_BUMN_Untuk_Indonesia_2020.svg" alt="BUMN">
+      </a>
+    </div>
+  </div>
+</section>
+<!-- clients section end -->
+
+<!-- blog section start -->
+<section id="blog" class="pt-36 pb-32 bg-slate-100">
+  <div class="container-2xl">
+    <div class="w-full px-4">
+      <div class="mx-auto text-center mb-16">
+        <h4 class="font-semibold uppercase text-dark mb-2 text-lg sm:text-4xl lg:text-3xl">BLOG</h4>
+        <h2 class="font-bold text-purple-600 text-3xl mb-4">Tulisan Terkini</h2>
+        <p class="font-medium text-md text-secondary sm:text-sm md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum amet perspiciatis! Aut dolorem quod eius eveniet ratione esse in.</p>
+      </div>
+    </div>
+
+    <div class="w-full py-2 flex flex-wrap xl:w-11/12 xl:mx-auto">
+      <div class="w-full mb-3 p-4 md:w-1/2 sm:w-1/2 xl:w-1/4">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-10">
+          <img src="https://source.unsplash.com/360x200?programming" alt="programming" class="w-full">
+          <div class="py-8 px-6">
+            <h3>
+              <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Ngoding Gak Bikin Pusing</a>
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6 truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ut.</p>
+            <a href="#" class="font-medium text-sm text-white py-2 px-3 rounded-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 transition duration-300 hover:text-dark">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full mb-3 p-4 md:w-1/2 sm:w-1/2 xl:w-1/4">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-10">
+          <img src="https://source.unsplash.com/360x200?coffee" alt="programming" class="w-full">
+          <div class="py-8 px-6">
+            <h3>
+              <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Kopi Toraja Tiada Tanding</a>
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6 truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ut.</p>
+            <a href="#" class="font-medium text-sm text-white py-2 px-3 rounded-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 transition duration-300 hover:text-dark">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full mb-3 p-4 md:w-1/2 sm:w-1/2 xl:w-1/4">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-10">
+          <img src="https://source.unsplash.com/360x200?graphic" alt="programming" class="w-full">
+          <div class="py-8 px-6">
+            <h3>
+              <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Inscape Kalahkan Illustrator</a>
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6 truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ut.</p>
+            <a href="#" class="font-medium text-sm text-white py-2 px-3 rounded-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 transition duration-300 hover:text-dark">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full mb-3 p-4 md:w-1/2 sm:w-1/2 xl:w-1/4">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-10">
+          <img src="https://source.unsplash.com/360x200?gamer" alt="programming" class="w-full">
+          <div class="py-8 px-6">
+            <h3>
+              <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Game Kini Makin 'Ngawur'</a>
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6 truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ut.</p>
+            <a href="#" class="font-medium text-sm text-white py-2 px-3 rounded-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 transition duration-300 hover:text-dark">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- blog section end -->
+
+<!-- contact section start -->
+<section id="contact" class="pt-36 pb-32">
+  <div class="container">
+    <div class="w-full px-4">
+      <div class="w-full px-4">
+      <div class="mx-auto text-center mb-16">
+        <h4 class="font-semibold uppercase text-dark mb-2 text-lg sm:text-4xl lg:text-3xl">Contact</h4>
+        <h2 class="font-bold text-purple-600 text-3xl mb-4">Hubungi Saya</h2>
+        <p class="font-medium text-md text-secondary sm:text-sm md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum amet perspiciatis! Aut dolorem quod eius eveniet ratione esse in.</p>
+      </div>
+    </div>
+      <form action="">
+        <div class="w-full lg:w-1/2 lg:mx-auto">
+        <div class="w-full px-4 mb-8">
+          <label for="name" class="text-base font-bold text-primary">Nama</label>
+          <input type="text" id="name" placeholder="Nama" class="w-full bg-slate-200 text-dark p-3 rounded-lg focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+        </div>
+
+        <div class="w-full px-4 mb-8">
+          <label for="email" class="text-base font-bold text-primary">Email</label>
+          <input type="email" id="email" placeholder="name@corp.example" class="w-full bg-slate-200 text-dark p-3 rounded-lg focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+        </div>
+
+        <div class="w-full px-4 mb-8">
+          <label for="message" class="text-base font-bold text-primary">Pesan</label>
+          <textarea type="message" id="message" placeholder="Tuliskan pesan" class="w-full bg-slate-200 text-dark p-3 rounded-lg focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+        </div>
+
+        <div class="w-full px-4">
+          <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+        </div>
+        
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- contact section end -->
+
+<!-- footer section start -->
+<footer class="bg-dark pt-24 pb-12">
+  <div class="container">
+    <div class="flex flex-wrap">
+      <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+        <h2 class="font-bold text-4xl text-white mb-5">ILKHOERI</h2>
+        <h3 class="font-bold text-2xl mb-2">Jangan lupa singgah ke akun sosial kami</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+
+      <div class="w-full px-4 mb-12 md:w-1/3">
+        <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+        <ul class="text-slate-300">
+        <li>
+          <a class="inline-block text-base hover:text-primary mb-3" href="#">Programming</a>
+        </li>
+        <li>
+          <a class="inline-block text-base hover:text-primary mb-3" href="#">Coffee</a>
+        </li>
+        <li>
+          <a class="inline-block text-base hover:text-primary mb-3" href="#">Design</a>
+        </li>
+      </div>
+
+      <div class="w-full px-4 mb-12 md:w-1/3">
+        <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+        <ul class="text-slate-300">
+        <li>
+          <a class="inline-block text-base hover:text-primary mb-3" href="#home">Beranda</a>
+        </li>
+        <li>
+          <a class="inline-block text-base hover:text-primary mb-3" href="#about">Tentang Saya</a>
+        </li>
+        <li>
+          <a class="inline-block text-base hover:text-primary mb-3" href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a class="inline-block text-base hover:text-primary mb-3" href="#clients">Clients</a>
+        </li>
+        <li>
+          <a class="inline-block text-base hover:text-primary mb-3" href="#blog">Blog</a>
+        </li>
+        <li>
+          <a class="inline-block text-base hover:text-primary mb-3" href="#contact">Contacts</a>
+        </li>
+      </div>
+
+    </div>
+
+    <div class="w-full pt-10 border-t border-slate-800">
+      <div class="flex items-center justify-center mb-5">
+  <!-- github icon -->
+            <a href="https://github.com/ilkhoeri" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-dark hover:border-none text-slate-300 hover:hiden:text-slate-300 hover:text-white transition duration-300">
+              <svg class="fill-current" role="img" width="34" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M8 1C4.133 1 1 4.13 1 7.993c0 3.09 2.006 5.71 4.787 6.635.35.064.478-.152.478-.337 0-.166-.006-.606-.01-1.19-1.947.423-2.357-.937-2.357-.937-.319-.808-.778-1.023-.778-1.023-.635-.434.048-.425.048-.425.703.05 1.073.72 1.073.72.624 1.07 1.638.76 2.037.582.063-.452.244-.76.444-.935-1.554-.176-3.188-.776-3.188-3.456 0-.763.273-1.388.72-1.876-.072-.177-.312-.888.07-1.85 0 0 .586-.189 1.924.716A6.711 6.711 0 018 4.381c.595.003 1.194.08 1.753.236 1.336-.905 1.923-.717 1.923-.717.382.963.142 1.674.07 1.85.448.49.72 1.114.72 1.877 0 2.686-1.638 3.278-3.197 3.45.251.216.475.643.475 1.296 0 .934-.009 1.688-.009 1.918 0 .187.127.404.482.336A6.996 6.996 0 0015 7.993 6.997 6.997 0 008 1z" clip-rule="evenodd"></path></svg>
+            </a>
+  <!-- twitter icon -->
+            <a href="https://github.com/ilkhoeri" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-dark hover:border-none text-slate-300 hover:hiden:text-slate-300 hover:text-white transition duration-300">
+              <svg class="fill-current" role="img" width="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+  <!-- facebook icon -->
+            <a href="https://github.com/ilkhoeri" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-dark hover:border-none text-slate-300 hover:hiden:text-slate-300 hover:text-white transition duration-300">
+              <svg class="fill-current" role="img" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M14,6h3a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H14A5,5,0,0,0,9,7v3H7a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1H9v7a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1V14h2.22a1,1,0,0,0,1-.76l.5-2a1,1,0,0,0-1-1.24H13V7A1,1,0,0,1,14,6Z"/></svg>
+            </a>
+  <!-- instagram icon -->
+            <a href="https://github.com/ilkhoeri" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-dark hover:border-none text-slate-300 hover:hiden:text-slate-300 hover:text-white transition duration-300">
+              <svg class="fill-current" role="img" width="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 2C9.284 2 8.944 2.01133 7.87733 2.06C6.81267 2.10867 6.08533 2.278 5.44933 2.52533C4.78267 2.776 4.178 3.16933 3.678 3.67867C3.16948 4.17809 2.77591 4.78233 2.52467 5.44933C2.27867 6.08533 2.10867 6.81333 2.06 7.878C2.012 8.944 2 9.28333 2 12C2 14.7167 2.01133 15.056 2.06 16.1227C2.10867 17.1873 2.278 17.9147 2.52533 18.5507C2.776 19.2173 3.16933 19.822 3.67867 20.322C4.1781 20.8305 4.78234 21.2241 5.44933 21.4753C6.08533 21.722 6.81267 21.8913 7.87733 21.94C8.944 21.9887 9.284 22 12 22C14.716 22 15.056 21.9887 16.1227 21.94C17.1873 21.8913 17.9147 21.722 18.5507 21.4747C19.2173 21.224 19.822 20.8307 20.322 20.3213C20.8305 19.8219 21.2241 19.2177 21.4753 18.5507C21.722 17.9147 21.8913 17.1873 21.94 16.1227C21.9887 15.056 22 14.716 22 12C22 9.284 21.9887 8.944 21.94 7.87733C21.8913 6.81267 21.722 6.08533 21.4747 5.44933C21.2236 4.78204 20.83 4.17755 20.3213 3.678C19.8219 3.16948 19.2177 2.77591 18.5507 2.52467C17.9147 2.27867 17.1867 2.10867 16.122 2.06C15.056 2.012 14.7167 2 12 2ZM12 3.802C14.67 3.802 14.9867 3.812 16.0413 3.86C17.016 3.90467 17.5453 4.06667 17.898 4.20467C18.3647 4.38533 18.698 4.60267 19.048 4.952C19.398 5.302 19.6147 5.63533 19.7953 6.102C19.9327 6.45467 20.0953 6.984 20.14 7.95867C20.188 9.01333 20.198 9.33 20.198 12C20.198 14.67 20.188 14.9867 20.14 16.0413C20.0953 17.016 19.9333 17.5453 19.7953 17.898C19.6353 18.3324 19.3799 18.7253 19.048 19.048C18.7254 19.38 18.3324 19.6354 17.898 19.7953C17.5453 19.9327 17.016 20.0953 16.0413 20.14C14.9867 20.188 14.6707 20.198 12 20.198C9.32933 20.198 9.01333 20.188 7.95867 20.14C6.984 20.0953 6.45467 19.9333 6.102 19.7953C5.66764 19.6353 5.27467 19.3799 4.952 19.048C4.62012 18.7253 4.36475 18.3323 4.20467 17.898C4.06733 17.5453 3.90467 17.016 3.86 16.0413C3.812 14.9867 3.802 14.67 3.802 12C3.802 9.33 3.812 9.01333 3.86 7.95867C3.90467 6.984 4.06667 6.45467 4.20467 6.102C4.38533 5.63533 4.60267 5.302 4.952 4.952C5.27463 4.62003 5.66761 4.36465 6.102 4.20467C6.45467 4.06733 6.984 3.90467 7.95867 3.86C9.01333 3.812 9.33 3.802 12 3.802Z"/><path d="M12 15.3367C11.5618 15.3367 11.128 15.2504 10.7231 15.0827C10.3183 14.915 9.95047 14.6692 9.64064 14.3594C9.3308 14.0495 9.08502 13.6817 8.91734 13.2769C8.74965 12.8721 8.66335 12.4382 8.66335 12C8.66335 11.5618 8.74965 11.1279 8.91734 10.7231C9.08502 10.3183 9.3308 9.95046 9.64064 9.64062C9.95047 9.33078 10.3183 9.08501 10.7231 8.91732C11.128 8.74964 11.5618 8.66333 12 8.66333C12.885 8.66333 13.7336 9.01487 14.3594 9.64062C14.9851 10.2664 15.3367 11.1151 15.3367 12C15.3367 12.8849 14.9851 13.7336 14.3594 14.3594C13.7336 14.9851 12.885 15.3367 12 15.3367ZM12 6.86C10.6368 6.86 9.32942 7.40153 8.36549 8.36547C7.40155 9.32941 6.86002 10.6368 6.86002 12C6.86002 13.3632 7.40155 14.6706 8.36549 15.6345C9.32942 16.5985 10.6368 17.14 12 17.14C13.3632 17.14 14.6706 16.5985 15.6345 15.6345C16.5985 14.6706 17.14 13.3632 17.14 12C17.14 10.6368 16.5985 9.32941 15.6345 8.36547C14.6706 7.40153 13.3632 6.86 12 6.86ZM18.6353 6.76667C18.6353 7.0889 18.5073 7.39794 18.2795 7.6258C18.0516 7.85366 17.7426 7.98167 17.4204 7.98167C17.0981 7.98167 16.7891 7.85366 16.5612 7.6258C16.3334 7.39794 16.2053 7.0889 16.2053 6.76667C16.2053 6.44443 16.3334 6.13539 16.5612 5.90753C16.7891 5.67968 17.0981 5.55167 17.4204 5.55167C17.7426 5.55167 18.0516 5.67968 18.2795 5.90753C18.5073 6.13539 18.6353 6.44443 18.6353 6.76667Z"/></svg>
+            </a>
+  <!-- linkedin icon -->
+            <a href="https://github.com/ilkhoeri" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-dark hover:border-none text-slate-300 hover:hiden:text-slate-300 hover:text-white transition duration-300">
+              <svg class="fill-current" role="img" width="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Linkedin</title><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"/></svg>
+            </a>
+      </div>
+      <p class="font-medium text-[0.75rem] text-slate-500 text-center">Dibuat dengan <span class="text-pink-500">❤️</span> oleh <a href="#" target="_blank" class="font-bold text-primary">Khoeri Ilham</a>, menggunakan <a href="https://tailwindcss.com/" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.</p>
+    </div>
+  </div>
+</footer>
+<!-- footer section end -->
+
+
+
+<!-- back to top start -->
+<a href="#home" class="fixed buttom-4 right-4 z-[9999] h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+  <span class="block h-5 w-5 rotate-45 border-t-2 border-l-2 mt-2"></span>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

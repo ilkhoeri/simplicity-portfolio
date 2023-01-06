@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm dark:bg-dark dark:bg-opacity-50;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+    /* @apply fixed z-[9999] bg-white bg-opacity-70; */
+    /* backdrop-filter: blur(5px); */
+    /* box-shadow: 0 0.125rem 0.75rem rgba(66, 66, 66, 0.6),
+                inset 5px 5px 10px rgba(255, 255, 255, 0.135),
+                inset -5px -5px 20px rgba(255, 255, 255, 0.135) !important; */
+    transition: 1s;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+}
+
+.hamburger-line {
+    @apply my-2 block h-[2px] w-[30px] bg-dark dark:bg-white;
+}
+
+/* origin-top-leftdan origin-buttom-left jgn dihapus karna nanti saat page mereload atau pas ditengah bisa macet-macet */
+.hamburger-active > span:nth-child(1) {
+    @apply origin-top-left rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply origin-bottom-left -rotate-45;
+}
+
+
+/* darkmode */
+#dark-toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+    transition: 1s;
+}
+
+.gradient-primary {
+  --tw-gradient-stops: theme("colors.rose.400"), theme("colors.cyan.400"), theme("colors.orange.600");
+}
